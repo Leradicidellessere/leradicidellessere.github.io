@@ -3,50 +3,97 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Portfolio di Giulia</title>
+  <title>Michela Bartoli - Riflessologa</title>
   <style>
     body {
-      font-family: sans-serif;
-      background-color: #e6f0e6;
-      color: #2f4f2f;
-      padding: 2rem;
+      font-family: 'Arial', sans-serif;
+      background-color: #F4C2C2; /* rosso chiaro pastello */
+      color: #000000;
+      margin: 0;
+      padding: 20px;
+      max-width: 700px;
+      margin-left: auto;
+      margin-right: auto;
     }
-    h1 {
+    header {
       text-align: center;
-      color: #567d46;
+      padding-bottom: 20px;
     }
-    .progetto {
-      background: #d9ead3;
-      padding: 1rem;
-      margin: 1rem 0;
+    header h1 {
+      margin: 0;
+      font-size: 2.5em;
+      color: #000000;
+    }
+    header p {
+      margin: 5px 0 0 0;
+      font-style: italic;
+      color: #3b3b3b;
+    }
+    section {
+      background-color: #B4D8B4; /* verde chiaro */
       border-radius: 10px;
+      padding: 15px 20px;
+      margin-bottom: 20px;
+    }
+    section h2 {
+      margin-top: 0;
+      border-bottom: 2px solid #000000;
+      padding-bottom: 5px;
+    }
+    .contact-info p {
+      margin: 5px 0;
+    }
+    .photos {
+      display: flex;
+      gap: 15px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .photos img {
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    }
+    footer {
+      text-align: center;
+      font-size: 0.9em;
+      color: #3b3b3b;
+      margin-top: 30px;
     }
   </style>
 </head>
 <body>
-  <h1>Benvenuta nel mio portfolio!</h1>
-  <div class="progetto">
-    <h2>Progetto 1</h2>
-    <p>Descrizione del progetto 1.</p>
-  </div>
-  <div class="progetto">
-    <h2>Progetto 2</h2>
-    <p>Descrizione del progetto 2.</p>
-  </div>
-  <p>Contattami: <a href="mailto:tuamail@example.com">tuamail@example.com</a></p>
-<form action="https://formspree.io/f/mvovprdb" method="POST">
-  <h2>Contattami</h2>
-  <label for="name">Nome:</label><br />
-  <input type="text" id="name" name="name" required /><br /><br />
+  <header>
+    <h1>Michela Bartoli</h1>
+    <p>Riflessologa plantare e del corpo dal 2017</p>
+  </header>
 
-  <label for="email">Email:</label><br />
-  <input type="email" id="email" name="_replyto" required /><br /><br />
+  <section>
+    <h2>Chi sono</h2>
+    <p>Dal 2017 pratico la riflessologia plantare e del corpo, con passione e professionalità. Partecipo regolarmente a corsi di formazione e specializzazione per offrire sempre il meglio ai miei clienti.</p>
+  </section>
 
-  <label for="message">Messaggio:</label><br />
-  <textarea id="message" name="message" rows="4" required></textarea><br /><br />
+  <section class="contact-info">
+    <h2>Contatti</h2>
+    <p>Email: <a href="mailto:michela@example.com">michela@example.com</a></p>
+    <p>Telefono: <a href="tel:+390123456789">+39 012 345 6789</a></p>
+    <p>Indirizzo: Via Roma 123, Firenze</p>
+  </section>
 
-  <button type="submit">Invia</button>
-</form>
+  <section class="photos">
+    <h2>Foto</h2>
+    <div class="photos">
+      <img src="https://source.unsplash.com/150x150/?nature,relax" alt="Foto rilassante 1" />
+      <img src="https://source.unsplash.com/150x150/?foot,massage" alt="Foto riflessologia 2" />
+      <img src="https://source.unsplash.com/150x150/?wellness" alt="Foto benessere 3" />
+    </div>
+  </section>
 
+  <footer>
+    <p>© 2025 Michela Bartoli - Tutti i diritti riservati</p>
+  </footer>
 </body>
 </html>
+

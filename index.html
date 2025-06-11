@@ -6,18 +6,19 @@
   <title>Michela Bartoli - Riflessologa</title>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans&display=swap" rel="stylesheet" />
   <style>
+    /* Stili puliti, rosso e verde pastello */
     * {
       box-sizing: border-box;
       margin: 0; padding: 0;
     }
     body {
       font-family: 'Open Sans', sans-serif;
-      background: #f9f0f0; /* rosso pastello molto chiaro */
+      background: #f9f0f0;
       color: #2c2c2c;
-      line-height: 1.6;
       max-width: 700px;
       margin: auto;
       padding: 40px 20px;
+      line-height: 1.6;
     }
     header {
       text-align: center;
@@ -27,17 +28,17 @@
       font-family: 'Montserrat', sans-serif;
       font-weight: 700;
       font-size: 3rem;
-      color: #b04a4a; /* rosso pastello */
+      color: #b04a4a;
       margin-bottom: 10px;
       letter-spacing: 2px;
     }
     header p {
       font-style: italic;
-      color: #4a6b4a; /* verde pastello */
+      color: #4a6b4a;
       font-size: 1.1rem;
     }
     section {
-      background: #d7e5d7; /* verde pastello chiaro */
+      background: #d7e5d7;
       border-radius: 16px;
       padding: 30px 25px;
       margin-bottom: 40px;
@@ -52,7 +53,7 @@
       font-weight: 700;
       font-size: 1.8rem;
       margin-bottom: 20px;
-      color: #7b3b3b; /* rosso scuro */
+      color: #7b3b3b;
       border-bottom: 2px solid #b04a4a;
       padding-bottom: 8px;
       letter-spacing: 1px;
@@ -66,4 +67,84 @@
       color: #4a6b4a;
       text-decoration: none;
       font-weight: 600;
-      transition: color 0.3s e
+      transition: color 0.3s ease;
+    }
+    .contact-info a:hover {
+      color: #b04a4a;
+    }
+    .photos {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+    }
+    .photos img {
+      width: 160px;
+      height: 160px;
+      object-fit: cover;
+      border-radius: 20px;
+      box-shadow: 0 6px 12px rgba(0,0,0,0.08);
+      transition: transform 0.3s ease;
+      cursor: pointer;
+    }
+    .photos img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 10px 20px rgba(176, 74, 74, 0.3);
+    }
+    footer {
+      text-align: center;
+      font-size: 0.9rem;
+      color: #666;
+      margin-top: 50px;
+      font-style: italic;
+    }
+    @media (max-width: 480px) {
+      body {
+        padding: 20px 15px;
+      }
+      header h1 {
+        font-size: 2.2rem;
+      }
+      section {
+        padding: 20px 15px;
+      }
+      .photos img {
+        width: 130px;
+        height: 130px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Michela Bartoli</h1>
+    <p>Riflessologa plantare e del corpo dal 2017</p>
+  </header>
+
+  <section>
+    <h2>Chi sono</h2>
+    <p>Dal 2017 pratico la riflessologia plantare e del corpo con passione e professionalità. Partecipo regolarmente a corsi di formazione e specializzazione per offrire sempre il meglio ai miei clienti.</p>
+  </section>
+
+  <section class="contact-info">
+    <h2>Contatti</h2>
+    <p>Telefono: <a href="tel:+393482734809">348 273 4809</a></p>
+    <p>Email: <a href="mailto:leradicidell'essere08@gmail.com">leradicidell'essere08@gmail.com</a></p>
+    <p>Indirizzo: Via del Giambellino, Pesaro</p>
+  </section>
+
+  <section>
+    <h2>Foto</h2>
+    <div class="photos">
+      <img src="https://source.unsplash.com/160x160/?nature,relax" alt="Foto rilassante" />
+      <img src="https://source.unsplash.com/160x160/?foot,massage" alt="Foto riflessologia" />
+      <img src="tuafoto.jpg" alt="Michela Bartoli" />
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Michela Bartoli - Tutti i diritti riservati</p>
+  </footer>
+</body>
+</html>

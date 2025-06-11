@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Le radici dell'essere - Riflessologia</title>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans&display=swap" rel="stylesheet" />
+  <title>Le radici dell'essere</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans&display=swap" rel="stylesheet" />
   <style>
     * {
       box-sizing: border-box;
@@ -12,71 +12,79 @@
     }
     body {
       font-family: 'Open Sans', sans-serif;
-      background: #f2f7f7;
+      background-image: url('sfondo.jpg'); /* nome file immagine */
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
       color: #333;
       max-width: 700px;
       margin: auto;
       padding: 30px 20px;
       line-height: 1.6;
+      position: relative;
+      z-index: 0;
     }
     header {
-      background-color: #d9643e; /* rosso/arancione */
-      color: white;
       text-align: center;
-      padding: 50px 20px;
-      border-radius: 10px;
-      font-family: 'Montserrat', sans-serif;
+      margin-bottom: 50px;
     }
     header h1 {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 700;
       font-size: 3rem;
+      color: #b04a4a;
       margin-bottom: 10px;
       letter-spacing: 2px;
     }
     header p {
-      font-size: 1.2rem;
-      font-style: italic;
+      font-style: normal;
+      color: #4a6b4a;
+      font-size: 1.1rem;
+      margin-top: 5px;
     }
     section {
-      margin-top: 40px;
+      background-color: rgba(255, 255, 255, 0.85);
+      border-radius: 16px;
       padding: 30px 25px;
-      border-radius: 10px;
-      box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+      margin-bottom: 40px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+      transition: box-shadow 0.3s ease;
+      position: relative;
+      z-index: 1;
     }
-    #chi-sono {
-      background-color: #e6f0f0; /* verde acqua chiaro */
-      color: #204d4d;
-      font-size: 1.1rem;
-      font-style: italic;
-      white-space: pre-line;
+    section:hover {
+      box-shadow: 0 8px 20px rgba(176, 74, 74, 0.3);
     }
-    #contatti {
-      background-color: #f7e6de; /* arancione tenue */
-      color: #7a3e2b;
-    }
-    #contatti h2 {
+    section h2 {
       font-family: 'Montserrat', sans-serif;
       font-weight: 700;
       font-size: 1.8rem;
       margin-bottom: 20px;
+      color: #7b3b3b;
+      border-bottom: 2px solid #b04a4a;
+      padding-bottom: 8px;
       letter-spacing: 1px;
     }
-    #contatti p {
-      margin-bottom: 10px;
-      font-weight: 600;
+    p {
+      font-size: 1.05rem;
+      color: #333;
+      margin-bottom: 15px;
     }
-    #contatti a {
-      color: #7a3e2b;
+    .contact-info a {
+      color: #4a6b4a;
       text-decoration: none;
+      font-weight: 600;
       transition: color 0.3s ease;
     }
-    #contatti a:hover {
-      color: #d9643e;
+    .contact-info a:hover {
+      color: #b04a4a;
     }
     footer {
       text-align: center;
       font-size: 0.9rem;
       color: #666;
-      margin-top: 60px;
+      margin-top: 50px;
       font-style: italic;
     }
     @media (max-width: 480px) {
@@ -94,18 +102,18 @@
 </head>
 <body>
   <header>
-    <h1>Le radici dell'essere</h1>
+    <h1>Le radici dell’essere</h1>
     <p>Michela Bartoli</p>
   </header>
 
-  <section id="chi-sono">
+  <section>
     <h2>Chi sono</h2>
-    <p>Benvenuti nel mio studio Le radici dell’essere, dedicato alla riflessologia plantare e del corpo.<br><br>
-       Sono Michela Bartoli, riflessologa dal 2017 e continuo a formarmi regolarmente attraverso corsi e aggiornamenti sul Metodo Lucia Torri Cianci, per garantire sempre un trattamento professionale e consapevole.<br><br>
-       Attraverso ogni trattamento, accompagno quel viaggio silenzioso verso l’equilibrio, la guarigione e la consapevolezza profonda. Questo studio è uno spazio dove i piedi parlano... e l’anima ascolta... un luogo di ascolto e rinascita interiore.</p>
+    <p>Benvenuti nel mio studio Le radici dell’essere, dedicato alla riflessologia plantare e del corpo.</p>
+    <p>Sono Michela Bartoli, riflessologa dal 2017 e continuo a formarmi regolarmente attraverso corsi e aggiornamenti sul Metodo Lucia Torri Cianci, per garantire sempre un trattamento professionale e consapevole.</p>
+    <p>Attraverso ogni trattamento, accompagno quel viaggio silenzioso verso l’equilibrio, la guarigione e la consapevolezza profonda. Questo studio è uno spazio dove i piedi parlano... e l’anima ascolta... un luogo di ascolto e rinascita interiore.</p>
   </section>
 
-  <section id="contatti">
+  <section class="contact-info">
     <h2>Contatti</h2>
     <p>Telefono: <a href="tel:+393482734809">348 273 4809</a></p>
     <p>Email: <a href="mailto:leradicidellessere08@gmail.com">leradicidellessere08@gmail.com</a></p>
@@ -113,8 +121,7 @@
   </section>
 
   <footer>
-    <p>© 2025 Le radici dell'essere - Tutti i diritti riservati</p>
+    <p>© 2025 Michela Bartoli - Tutti i diritti riservati</p>
   </footer>
 </body>
 </html>
-

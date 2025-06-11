@@ -4,96 +4,66 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Michela Bartoli - Riflessologa</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans&display=swap" rel="stylesheet" />
   <style>
+    * {
+      box-sizing: border-box;
+      margin: 0; padding: 0;
+    }
     body {
-      font-family: 'Arial', sans-serif;
-      background-color: #F4C2C2; /* rosso chiaro pastello */
-      color: #000000;
-      margin: 0;
-      padding: 20px;
+      font-family: 'Open Sans', sans-serif;
+      background: #f9f0f0; /* rosso pastello molto chiaro */
+      color: #2c2c2c;
+      line-height: 1.6;
       max-width: 700px;
-      margin-left: auto;
-      margin-right: auto;
+      margin: auto;
+      padding: 40px 20px;
     }
     header {
       text-align: center;
-      padding-bottom: 20px;
+      margin-bottom: 50px;
     }
     header h1 {
-      margin: 0;
-      font-size: 2.5em;
-      color: #000000;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 700;
+      font-size: 3rem;
+      color: #b04a4a; /* rosso pastello */
+      margin-bottom: 10px;
+      letter-spacing: 2px;
     }
     header p {
-      margin: 5px 0 0 0;
       font-style: italic;
-      color: #3b3b3b;
+      color: #4a6b4a; /* verde pastello */
+      font-size: 1.1rem;
     }
     section {
-      background-color: #B4D8B4; /* verde chiaro */
-      border-radius: 10px;
-      padding: 15px 20px;
-      margin-bottom: 20px;
+      background: #d7e5d7; /* verde pastello chiaro */
+      border-radius: 16px;
+      padding: 30px 25px;
+      margin-bottom: 40px;
+      box-shadow: 0 4px 10px rgba(176, 74, 74, 0.15);
+      transition: box-shadow 0.3s ease;
+    }
+    section:hover {
+      box-shadow: 0 8px 20px rgba(176, 74, 74, 0.3);
     }
     section h2 {
-      margin-top: 0;
-      border-bottom: 2px solid #000000;
-      padding-bottom: 5px;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 700;
+      font-size: 1.8rem;
+      margin-bottom: 20px;
+      color: #7b3b3b; /* rosso scuro */
+      border-bottom: 2px solid #b04a4a;
+      padding-bottom: 8px;
+      letter-spacing: 1px;
     }
-    .contact-info p {
-      margin: 5px 0;
+    p {
+      font-size: 1.05rem;
+      color: #333;
+      margin-bottom: 15px;
     }
-    .photos {
-      display: flex;
-      gap: 15px;
-      flex-wrap: wrap;
-      justify-content: center;
-    }
-    .photos img {
-      width: 150px;
-      height: 150px;
-      object-fit: cover;
-      border-radius: 10px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
-    }
-    footer {
-      text-align: center;
-      font-size: 0.9em;
-      color: #3b3b3b;
-      margin-top: 30px;
-    }
-  </style>
-</head>
-<body>
-  <header>
-    <h1>Michela Bartoli</h1>
-    <p>Riflessologa plantare e del corpo dal 2017</p>
-  </header>
-
-  <section>
-    <h2>Chi sono</h2>
-    <p>Dal 2017 pratico la riflessologia plantare e del corpo, con passione e professionalità. Partecipo regolarmente a corsi di formazione e specializzazione per offrire sempre il meglio ai miei clienti.</p>
-  </section>
-
-  <section class="contact-info">
-    <h2>Contatti</h2>
-    <p>Email: <a href="mailto:michela@example.com">michela@example.com</a></p>
-    <p>Telefono: <a href="tel:+390123456789">+39 012 345 6789</a></p>
-    <p>Indirizzo: Via Roma 123, Firenze</p>
-  </section>
-
-  <section class="photos">
-    <h2>Foto</h2>
-    <div class="photos">
-      <img src="https://source.unsplash.com/150x150/?nature,relax" alt="Foto rilassante 1" />
-      <img src="https://source.unsplash.com/150x150/?foot,massage" alt="Foto riflessologia 2" />
-      <img src="https://source.unsplash.com/150x150/?wellness" alt="Foto benessere 3" />
-    </div>
-  </section>
-
-  <footer>
-    <p>© 2025 Michela Bartoli - Tutti i diritti riservati</p>
-  </footer>
-</body>
-</html>
-
+    .contact-info a {
+      color: #4a6b4a;
+      text-decoration: none;
+      font-weight: 600;
+      transition: color 0.3s e
